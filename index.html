@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Battle Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="player-area">
+            <h2>Player</h2>
+            <div id="playerDeck" class="deck"></div>
+            <div id="playerHealth" class="health-bar">Health: 100</div>
+        </div>
+        
+        <div class="battle-area">
+            <div id="playerCard" class="card"></div>
+            <div class="vs">VS</div>
+            <div id="enemyCard" class="card"></div>
+            <button id="battleButton">Battle!</button>
+            <div id="battleResult"></div>
+        </div>
+        
+        <div class="enemy-area">
+            <h2>Enemy</h2>
+            <div id="enemyDeck" class="deck"></div>
+            <div id="enemyHealth" class="health-bar">Health: 100</div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

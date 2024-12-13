@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player-area, .enemy-area {
+    text-align: center;
+    width: 25%;
+}
+
+.battle-area {
+    text-align: center;
+    width: 50%;
+}
+
+.deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.health-bar {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#battleButton {
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#battleButton:hover {
+    background-color: #45a049;
+}
+
+.vs {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
